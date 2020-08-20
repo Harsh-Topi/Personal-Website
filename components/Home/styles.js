@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
 
+import { Typography, Button } from 'antd';
+
 export const Background = styled(Particles)`
 	background-color: black;
 	position: fixed;
@@ -40,17 +42,6 @@ export const InnerGrid = styled.div`
 	flex-basis: 75vw;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3.5vh auto;
-	border: 1px solid transparent;
-
-	&:before {
-		box-sizing: border-box;
-		position: absolute;
-		top: 0;
-		height: 100%;
-		content: '';
-		left: calc(50% - 5.3px);
-		border: 2px solid #dadce0;
-	}
 
 	@media (max-width: 768px) {
 		grid-template-columns: repeat(1, 1fr);
@@ -67,11 +58,13 @@ export const TextContainer = styled.div`
 	justify-content: center;
 `;
 
-export const PictureContainer = styled.div`
+export const RightContainer = styled.div`
 	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: 80%;
-	justify-content: flex-start;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
 `;
 
 export const ThiccText = styled.h1`
@@ -84,5 +77,18 @@ export const ThiccText = styled.h1`
 export const SmallText = styled.h1`
     font-weight: normal:
     font-size: 50px;
-    color: white;
+	color: white;
+	text-align: right;
+`;
+
+export const ButtonContainer = styled.div`
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	column-gap: 50px;
+`;
+
+export const CustomButton = styled(Button)`
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 `;

@@ -12,9 +12,11 @@ import {
 	SmallText,
 	InnerGrid,
 	TextContainer,
-	PictureContainer,
+	RightContainer,
+	ButtonContainer,
+	CustomButton,
 } from './styles';
-import { Row, Col, Typography } from 'antd';
+import { Row, Col, Typography, Button } from 'antd';
 
 const { Title } = Typography;
 
@@ -146,13 +148,47 @@ function HomeContainer() {
 			<MainContainer>
 				<InnerGrid>
 					<TextContainer>
-						<div>
+						<div style={{ marginRight: '30px' }}>
 							<ThiccText>Hello!</ThiccText>
 							<ThiccText>I'm Harsh.</ThiccText>
 							<SmallText>// An aspiring Software Developer</SmallText>
 						</div>
 					</TextContainer>
-					<PictureContainer></PictureContainer>
+					<RightContainer>
+						<div style={{ marginLeft: '30px' }}>
+							<SmallText style={{ fontSize: '30px', textAlign: 'left' }}>
+								Studying Computer Science at the University of Guelph. Currently
+								enjoying Web and Mobile Development. Open to any and all
+								opportunities.
+							</SmallText>
+						</div>
+						<ButtonContainer style={{ marginTop: '30px' }}>
+							<CustomButton
+								style={{
+									color: 'white',
+									borderColor: 'white',
+								}}
+								ghost={'true'}
+								type={'primary'}
+								size={'large'}>
+								Resume
+							</CustomButton>
+							<CustomButton
+								style={{ color: 'white', borderColor: 'white' }}
+								ghost={'true'}
+								type={'primary'}
+								size={'large'}>
+								GitHub
+							</CustomButton>
+							<CustomButton
+								style={{ color: 'white', borderColor: 'white' }}
+								ghost={'true'}
+								type={'primary'}
+								size={'large'}>
+								Projects
+							</CustomButton>
+						</ButtonContainer>
+					</RightContainer>
 				</InnerGrid>
 			</MainContainer>
 			<Background params={particlesOptions} />
