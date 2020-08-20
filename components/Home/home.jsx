@@ -10,8 +10,13 @@ import {
 	MainContainer,
 	ThiccText,
 	SmallText,
+	InnerGrid,
+	TextContainer,
+	PictureContainer,
 } from './styles';
-import { Row, Col, Divider } from 'antd';
+import { Row, Col, Typography } from 'antd';
+
+const { Title } = Typography;
 
 const particlesOptions = {
 	particles: {
@@ -139,8 +144,12 @@ function HomeContainer() {
 				</LogoContainer>
 			</NavigationBar>
 			<MainContainer>
-				<SmallText>Hey there!</SmallText>
-				<ThiccText>I'm Harsh Topiwala.</ThiccText>
+				<InnerGrid>
+					<TextContainer>
+						<Title>test</Title>
+					</TextContainer>
+					<PictureContainer>ee</PictureContainer>
+				</InnerGrid>
 			</MainContainer>
 			<Background params={particlesOptions} />
 		</>
