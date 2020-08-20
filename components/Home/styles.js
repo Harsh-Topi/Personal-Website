@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Particles from 'react-particles-js';
 
-import { Typography, Button } from 'antd';
+import { Button } from 'antd';
 
 export const Background = styled(Particles)`
 	background-color: black;
