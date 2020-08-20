@@ -146,9 +146,13 @@ function HomeContainer() {
 			<MainContainer>
 				<InnerGrid>
 					<TextContainer>
-						<Title>test</Title>
+						<div>
+							<ThiccText>Hello!</ThiccText>
+							<ThiccText>I'm Harsh.</ThiccText>
+							<SmallText>// An aspiring Software Developer</SmallText>
+						</div>
 					</TextContainer>
-					<PictureContainer>ee</PictureContainer>
+					<PictureContainer></PictureContainer>
 				</InnerGrid>
 			</MainContainer>
 			<Background params={particlesOptions} />

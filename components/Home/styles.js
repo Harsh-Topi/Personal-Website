@@ -29,7 +29,7 @@ export const MainContainer = styled.div`
 	margin: 2vh auto;
 	justify-content: center;
 	align-content: center;
-	background-color: white;
+
 	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
 `;
 
@@ -40,6 +40,17 @@ export const InnerGrid = styled.div`
 	flex-basis: 75vw;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3.5vh auto;
+	border: 1px solid transparent;
+
+	&:before {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		content: '';
+		left: calc(50% - 5.3px);
+		border: 2px solid #dadce0;
+	}
 
 	@media (max-width: 768px) {
 		grid-template-columns: repeat(1, 1fr);
@@ -48,10 +59,12 @@ export const InnerGrid = styled.div`
 
 export const TextContainer = styled.div`
 	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: 80%;
-	justify-content: flex-end;
-	background-color: blue;
+	height: 100%;
+	line-height: 100px;
+	align-items: center;
+	justify-content: center;
 `;
 
 export const PictureContainer = styled.div`
@@ -59,11 +72,10 @@ export const PictureContainer = styled.div`
 	width: 100%;
 	height: 80%;
 	justify-content: flex-start;
-	background-color: orange;
 `;
 
 export const ThiccText = styled.h1`
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 80px;
 	color: white;
 	text-align: right;
