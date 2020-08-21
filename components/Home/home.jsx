@@ -15,6 +15,9 @@ import {
 	RightContainer,
 	ButtonContainer,
 	CustomButton,
+	SmallTextLeft,
+	InsideLeftContainer,
+	InsideRightContainer,
 } from './styles';
 import { Row, Col, Typography, Button } from 'antd';
 
@@ -148,21 +151,21 @@ function HomeContainer() {
 			<MainContainer>
 				<InnerGrid>
 					<TextContainer>
-						<div style={{ marginRight: '30px' }}>
+						<InsideLeftContainer>
 							<ThiccText>Hello!</ThiccText>
 							<ThiccText>I'm Harsh.</ThiccText>
-							<SmallText>// An aspiring Software Developer</SmallText>
-						</div>
+							<SmallTextLeft>// An aspiring Software Developer</SmallTextLeft>
+						</InsideLeftContainer>
 					</TextContainer>
 					<RightContainer>
-						<div style={{ marginLeft: '30px' }}>
-							<SmallText style={{ fontSize: '30px', textAlign: 'left' }}>
-								Studying Computer Science at the University of Guelph. Currently
-								enjoying Web and Mobile Development. Open to any and all
-								opportunities.
+						<InsideRightContainer>
+							<SmallText>
+								Currently enjoying Web and Mobile Development. Open to any and
+								all opportunities.
 							</SmallText>
-						</div>
-						<ButtonContainer style={{ marginTop: '30px' }}>
+						</InsideRightContainer>
+						<ButtonContainer
+							style={{ marginTop: '30px', marginBottom: '25px' }}>
 							<CustomButton
 								style={{
 									color: 'white',

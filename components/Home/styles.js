@@ -22,6 +22,14 @@ export const NavigationBar = styled.div`
 export const LogoContainer = styled.div`
 	display: inline-block;
 	margin-left: 40px;
+
+	@media (max-width: 1000px) {
+		margin-left: 10px;
+	}
+
+	@media (max-width: 500px) {
+		margin-left: 0;
+	}
 `;
 
 export const MainContainer = styled.div`
@@ -43,7 +51,7 @@ export const InnerGrid = styled.div`
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3.5vh auto;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1000px) {
 		grid-template-columns: repeat(1, 1fr);
 	}
 `;
@@ -53,9 +61,13 @@ export const TextContainer = styled.div`
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	line-height: 100px;
+	line-height: 90px;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: 1050px) {
+		line-height: 80px;
+	}
 `;
 
 export const RightContainer = styled.div`
@@ -72,13 +84,58 @@ export const ThiccText = styled.h1`
 	font-size: 80px;
 	color: white;
 	text-align: right;
+
+	@media (max-width: 1252px) {
+		font-size: 70px;
+	}
+
+	@media (max-width: 1000px) {
+		text-align: center;
+		font-size: 60px;
+	}
+`;
+
+export const InsideLeftContainer = styled.div`
+	margin-right: 30px;
+
+	@media (max-width: 1000px) {
+		margin-right: 0;
+	}
+`;
+
+export const InsideRightContainer = styled.div`
+	margin-left: 30px;
+	@media (max-width: 1000px) {
+		margin-left: 0;
+	}
 `;
 
 export const SmallText = styled.h1`
     font-weight: normal:
     font-size: 50px;
 	color: white;
+	text-align: left;
+
+	@media (max-width: 1252px) {
+		font-size: 25px;
+	}
+
+	@media (max-width: 1000px) {
+		text-align: center;
+		font-size: 23px;
+	}
+
+`;
+
+export const SmallTextLeft = styled.h1`
+    font-weight: normal:
+    font-size: 50px;
+	color: white;
 	text-align: right;
+
+	@media (max-width: 1252px) {
+		font-size: 20px;
+	}
 `;
 
 export const ButtonContainer = styled.div`
@@ -86,6 +143,10 @@ export const ButtonContainer = styled.div`
 	justify-content: space-around;
 	flex-direction: row;
 	column-gap: 50px;
+
+	@media (max-width: 1252px) {
+		column-gap: 30px;
+	}
 `;
 
 export const CustomButton = styled(Button)`
