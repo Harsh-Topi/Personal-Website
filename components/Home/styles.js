@@ -32,6 +32,15 @@ export const LogoContainer = styled.div`
 	}
 `;
 
+export const LogoImg = styled.img`
+	width: 175px;
+	transform: scale(0.5);
+
+	@media (max-width: 1000px) {
+		width: 125px;
+	}
+`;
+
 export const MainContainer = styled.div`
 	position: relative;
 	display: flex;

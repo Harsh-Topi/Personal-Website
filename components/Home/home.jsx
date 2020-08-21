@@ -18,6 +18,7 @@ import {
 	SmallTextLeft,
 	InsideLeftContainer,
 	InsideRightContainer,
+	LogoImg,
 } from './styles';
 import { Row, Col, Typography, Button } from 'antd';
 
@@ -139,13 +140,7 @@ function HomeContainer() {
 		<>
 			<NavigationBar>
 				<LogoContainer>
-					<img
-						style={{
-							width: '175px',
-							transform: 'scale(0.5)',
-						}}
-						src="/logo/logowhite.svg"
-					/>
+					<LogoImg src="/logo/logowhite.svg" />
 				</LogoContainer>
 			</NavigationBar>
 			<MainContainer>
