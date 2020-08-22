@@ -21,6 +21,7 @@ import {
 	LogoImg,
 	NavigationList,
 	NavItem,
+	LinkAnchor,
 } from './styles';
 import { Row, Col, Typography, Button } from 'antd';
 
@@ -147,17 +148,17 @@ function HomeContainer() {
 				<NavigationList>
 					<NavItem>
 						<Link href="/">
-							<a>About Me</a>
+							<LinkAnchor>About Me</LinkAnchor>
 						</Link>
 					</NavItem>
 					<NavItem>
 						<Link href="/">
-							<a>About Me</a>
+							<LinkAnchor>Reports</LinkAnchor>
 						</Link>
 					</NavItem>
 					<NavItem>
 						<Link href="/">
-							<a>About Me</a>
+							<LinkAnchor>Contact</LinkAnchor>
 						</Link>
 					</NavItem>
 				</NavigationList>

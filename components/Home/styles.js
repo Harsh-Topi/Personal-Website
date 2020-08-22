@@ -24,6 +24,7 @@ export const NavigationBar = styled.div`
 export const NavigationList = styled.ul`
 	list-style: none;
 	padding-right: 30px;
+	margin-right: 30px;
 `;
 
 export const NavItem = styled.li`
@@ -37,6 +38,17 @@ export const NavItem = styled.li`
 
 	@media (max-width: 1000px) {
 		font-size: 20px;
+	}
+`;
+
+export const LinkAnchor = styled.a`
+	color: white;
+	border: 1px solid transparent;
+
+	&:hover {
+		color: white;
+		border: 1px solid;
+		border-spacing: 15px;
 	}
 `;
 
