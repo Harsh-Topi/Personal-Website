@@ -19,6 +19,8 @@ import {
 	InsideLeftContainer,
 	InsideRightContainer,
 	LogoImg,
+	NavigationList,
+	NavItem,
 } from './styles';
 import { Row, Col, Typography, Button } from 'antd';
 
@@ -142,6 +144,23 @@ function HomeContainer() {
 				<LogoContainer>
 					<LogoImg src="/logo/logowhite.svg" />
 				</LogoContainer>
+				<NavigationList>
+					<NavItem>
+						<Link href="/">
+							<a>About Me</a>
+						</Link>
+					</NavItem>
+					<NavItem>
+						<Link href="/">
+							<a>About Me</a>
+						</Link>
+					</NavItem>
+					<NavItem>
+						<Link href="/">
+							<a>About Me</a>
+						</Link>
+					</NavItem>
+				</NavigationList>
 			</NavigationBar>
 			<MainContainer>
 				<InnerGrid>
