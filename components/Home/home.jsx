@@ -141,26 +141,6 @@ const particlesOptions = {
 function HomeContainer() {
 	return (
 		<>
-			<NavigationBar>
-				<LogoContainer>
-					<LogoImg src="/logo/logowhite.svg" />
-				</LogoContainer>
-				<NavigationList>
-					<NavItem>
-						<Link href="/">
-							<LinkAnchor>About Me</LinkAnchor>
-						</Link>
-					</NavItem>
-					<NavItem>
-						<Link href="/">
-							<LinkAnchor>Reports</LinkAnchor>
-						</Link>
-					</NavItem>
-					<NavItem>
-						<LinkAnchor href="mailto:htopiw@gmail.com">Contact</LinkAnchor>
-					</NavItem>
-				</NavigationList>
-			</NavigationBar>
 			<MainContainer>
 				<InnerGrid>
 					<TextContainer>
