@@ -157,9 +157,7 @@ function HomeContainer() {
 						</Link>
 					</NavItem>
 					<NavItem>
-						<Link href="/">
-							<LinkAnchor>Contact</LinkAnchor>
-						</Link>
+						<LinkAnchor href="mailto:htopiw@gmail.com">Contact</LinkAnchor>
 					</NavItem>
 				</NavigationList>
 			</NavigationBar>
@@ -188,14 +186,18 @@ function HomeContainer() {
 								}}
 								ghost={'true'}
 								type={'primary'}
-								size={'large'}>
+								size={'large'}
+								href="https://drive.google.com/file/d/1p1c198vRGkrzzNy2BZL2JY1QT9A3jhAo/view?usp=sharing"
+								target="_blank">
 								Resume
 							</CustomButton>
 							<CustomButton
 								style={{ color: 'white', borderColor: 'white' }}
 								ghost={'true'}
 								type={'primary'}
-								size={'large'}>
+								size={'large'}
+								href="https://github.com/Harsh-Topi"
+								target="_blank">
 								GitHub
 							</CustomButton>
 							<CustomButton

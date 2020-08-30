@@ -47,7 +47,7 @@ export const LinkAnchor = styled.a`
 
 	&:hover {
 		color: white;
-		border: 1px solid;
+		border-bottom: 1px solid;
 		border-spacing: 15px;
 	}
 `;
@@ -156,7 +156,6 @@ export const SmallText = styled.h1`
     font-weight: normal:
     font-size: 50px;
 	color: white;
-	text-align: left;
 
 	@media (max-width: 1252px) {
 		font-size: 25px;
