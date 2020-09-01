@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Router from 'next/router';
 import Link from 'next/link';
 import Particles from 'react-particles-js';
+import { FaJava, FaPython, FaJs, FaNode, FaReact } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 import {
 	Background,
-	NavigationBar,
-	LogoContainer,
 	MainContainer,
 	ThiccText,
 	SmallText,
@@ -18,10 +18,11 @@ import {
 	SmallTextLeft,
 	InsideLeftContainer,
 	InsideRightContainer,
-	LogoImg,
-	NavigationList,
-	NavItem,
-	LinkAnchor,
+	InnerGrid2,
+	GeneralSkillsContainer,
+	TextContainerAbout,
+	IconContainer,
+	AboutParagraph,
 } from './styles';
 import { Row, Col, Typography, Button } from 'antd';
 
@@ -141,7 +142,7 @@ const particlesOptions = {
 function HomeContainer() {
 	return (
 		<>
-			<MainContainer>
+			<MainContainer style={{ marginBottom: '25vh' }}>
 				<InnerGrid>
 					<TextContainer>
 						<InsideLeftContainer>
@@ -191,6 +192,50 @@ function HomeContainer() {
 					</RightContainer>
 				</InnerGrid>
 			</MainContainer>
+
+			<MainContainer style={{ marginBottom: '25vh' }}>
+				<InnerGrid2>
+					<TextContainerAbout>
+						<Title
+							style={{
+								color: 'white',
+								fontSize: '35px',
+								marginBottom: '40px',
+							}}>
+							// About Me
+						</Title>
+						<AboutParagraph style={{ marginBottom: '30px' }}>
+							Hi! I'm Harsh, an aspiring Software Developer based in Toronto,
+							ON. I currently attend the University of Guelph where I study
+							Computer Science. <br /> <br /> I'm currently enjoying Web and
+							Mobile Development, however, I'm always looking for new topics to
+							explore as I'm trying to find my footing in the broad world of
+							software.
+						</AboutParagraph>
+						<p
+							style={{
+								color: 'white',
+							}}>
+							> Technologies I've been using
+						</p>
+						<IconContainer>
+							<IconContext.Provider
+								value={{
+									color: 'white',
+									size: '4em',
+									style: { margin: '20px 20px' },
+								}}>
+								<FaJava />
+								<FaPython />
+								<FaJs />
+								<FaNode />
+							</IconContext.Provider>
+						</IconContainer>
+					</TextContainerAbout>
+					<RightContainer></RightContainer>
+				</InnerGrid2>
+			</MainContainer>
+
 			<Background params={particlesOptions} />
 		</>
 	);

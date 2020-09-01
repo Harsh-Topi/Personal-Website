@@ -19,7 +19,7 @@ function Navbar() {
 				</LogoContainer>
 				<NavigationList>
 					<NavItem>
-						<Link href="/">
+						<Link href="/aboutme">
 							<LinkAnchor>About Me</LinkAnchor>
 						</Link>
 					</NavItem>

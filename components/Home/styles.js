@@ -74,10 +74,21 @@ export const LogoImg = styled.img`
 	}
 `;
 
+export const AboutParagraph = styled.div`
+	color: white;
+	font-size: 20px;
+	padding-right: 30px;
+	margin: auto;
+
+	@media (max-width: 1000px) {
+		padding-right: 0;
+	}
+`;
+
 export const MainContainer = styled.div`
 	position: relative;
 	display: flex;
-	width: 85vw;
+	width: 75vw;
 	margin: 2vh auto;
 	justify-content: center;
 	align-content: center;
@@ -112,6 +123,27 @@ export const TextContainer = styled.div`
 	}
 `;
 
+export const TextContainerAbout = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding-left: 30px;
+	justify-content: left;
+
+	@media (max-width: 1000px) {
+		padding-left: 0px;
+		justify-content: center;
+	}
+`;
+
+export const IconContainer = styled.div`
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: space-evenly;
+`;
+
 export const RightContainer = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -119,6 +151,7 @@ export const RightContainer = styled.div`
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+	background-color: grey;
 `;
 
 export const ThiccText = styled.h1`
@@ -193,4 +226,28 @@ export const ButtonContainer = styled.div`
 export const CustomButton = styled(Button)`
 	border-radius: 10px;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+`;
+
+export const InnerGrid2 = styled.div`
+	position: relative;
+	display: grid;
+	height: 45vh;
+	flex-basis: 85vw;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 3.5vh auto;
+
+	@media (max-width: 1000px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+`;
+
+export const GeneralSkillsContainer = styled.div`
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 85vw;
+	justify-content: space-around;
+	align-self: center;
+	column-gap: 70px;
+	background-color: orange;
 `;
