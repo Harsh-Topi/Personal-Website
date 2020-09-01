@@ -151,7 +151,6 @@ export const RightContainer = styled.div`
 	height: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color: grey;
 `;
 
 export const ThiccText = styled.h1`

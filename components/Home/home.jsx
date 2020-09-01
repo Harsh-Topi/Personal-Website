@@ -232,7 +232,9 @@ function HomeContainer() {
 							</IconContext.Provider>
 						</IconContainer>
 					</TextContainerAbout>
-					<RightContainer></RightContainer>
+					<RightContainer>
+						<img src="/logo/aboutme3.png" />
+					</RightContainer>
 				</InnerGrid2>
 			</MainContainer>
 
