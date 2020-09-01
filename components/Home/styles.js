@@ -78,6 +78,7 @@ export const AboutParagraph = styled.div`
 	color: white;
 	font-size: 20px;
 	padding-right: 30px;
+
 	margin: auto;
 
 	@media (max-width: 1000px) {
@@ -128,7 +129,7 @@ export const TextContainerAbout = styled.div`
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	padding-left: 30px;
+	padding-left: 15%;
 	justify-content: left;
 
 	@media (max-width: 1000px) {
@@ -139,9 +140,22 @@ export const TextContainerAbout = styled.div`
 
 export const IconContainer = styled.div`
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: wrap;
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: space-around;
+`;
+
+export const ImgContainer = styled.div`
+	display: flex;
+	justify-content: right;
+`;
+
+export const HeroImg = styled.img`
+	display: block;
+
+	@media (max-width: 1000px) {
+		width: 100%;
+	}
 `;
 
 export const RightContainer = styled.div`
@@ -151,6 +165,19 @@ export const RightContainer = styled.div`
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+`;
+
+export const RightContainer2 = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: flex-end;
+	padding-right: 15%;
+
+	@media (max-width: 1000px) {
+		padding-right: 0;
+	}
 `;
 
 export const ThiccText = styled.h1`
@@ -231,7 +258,7 @@ export const InnerGrid2 = styled.div`
 	position: relative;
 	display: grid;
 	height: 45vh;
-	flex-basis: 85vw;
+	flex-basis: 75vw;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3.5vh auto;
 

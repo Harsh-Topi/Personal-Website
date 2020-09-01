@@ -23,6 +23,9 @@ import {
 	TextContainerAbout,
 	IconContainer,
 	AboutParagraph,
+	ImgContainer,
+	HeroImg,
+	RightContainer2,
 } from './styles';
 import { Row, Col, Typography, Button } from 'antd';
 
@@ -200,7 +203,6 @@ function HomeContainer() {
 							style={{
 								color: 'white',
 								fontSize: '35px',
-								marginBottom: '40px',
 							}}>
 							// About Me
 						</Title>
@@ -232,9 +234,9 @@ function HomeContainer() {
 							</IconContext.Provider>
 						</IconContainer>
 					</TextContainerAbout>
-					<RightContainer>
-						<img src="/logo/aboutme3.png" />
-					</RightContainer>
+					<RightContainer2>
+						<HeroImg src="/logo/aboutme3.png" />
+					</RightContainer2>
 				</InnerGrid2>
 			</MainContainer>
 
