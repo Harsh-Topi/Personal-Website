@@ -4,10 +4,12 @@ import Link from 'next/link';
 import Particles from 'react-particles-js';
 import { FaJava, FaPython, FaJs, FaNode, FaReact } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import CardView from './card';
 
 import {
 	Background,
 	MainContainer,
+	MainContainer2,
 	ThiccText,
 	SmallText,
 	InnerGrid,
@@ -26,7 +28,10 @@ import {
 	ImgContainer,
 	HeroImg,
 	RightContainer2,
+	CardContainer,
+	TextContainer2,
 } from './styles';
+
 import { Row, Col, Typography, Button } from 'antd';
 
 const { Title } = Typography;
@@ -171,7 +176,7 @@ function HomeContainer() {
 								ghost={'true'}
 								type={'primary'}
 								size={'large'}
-								href="https://drive.google.com/file/d/1p1c198vRGkrzzNy2BZL2JY1QT9A3jhAo/view?usp=sharing"
+								href="https://drive.google.com/file/d/130FPdHz30JUtLK3TXqa_Y_tgFiuUro48/view?usp=sharing"
 								target="_blank">
 								Resume
 							</CustomButton>
@@ -238,6 +243,23 @@ function HomeContainer() {
 						<HeroImg src="/logo/aboutme3.png" />
 					</RightContainer2>
 				</InnerGrid2>
+			</MainContainer>
+
+			<MainContainer style={{ flexDirection: 'column' }}>
+				<TextContainer2>
+					<Title style={{ color: 'white' }}> // Projects</Title>
+					<p style={{ color: 'white' }}>
+						Here are some of my projects through which I've curated my skills
+						from. All my code can be found on my GitHub.
+					</p>
+				</TextContainer2>
+				<MainContainer2>
+					<CardContainer>
+						<CardView />
+						<CardView />
+						<CardView />
+					</CardContainer>
+				</MainContainer2>
 			</MainContainer>
 
 			<Background params={particlesOptions} />

@@ -90,9 +90,49 @@ export const MainContainer = styled.div`
 	position: relative;
 	display: flex;
 	width: 75vw;
-	margin: 2vh auto;
+	margin: auto auto;
 	justify-content: center;
 	align-content: center;
+
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+`;
+
+export const CardContainer = styled.div`
+	margin: 0 auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+	gap: 20px;
+`;
+
+export const Card = styled.div`
+	box-shadow: 0 0 3px rgb(0, 0, 0, 0.1);
+	background-color: rgb(43, 43, 43);
+	border-radius: 10px;
+`;
+
+export const CardHeader = styled.div`
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+`;
+
+export const CardBody = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+`;
+
+export const CardFooter = styled.div`
+	display: flex;
+	justify-content: space-around;
+`;
+
+export const MainContainer2 = styled.div`
+	position: relative;
+	display: flex;
+	width: 70vw;
+	margin: 2vh auto;
 
 	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
 `;
@@ -100,7 +140,7 @@ export const MainContainer = styled.div`
 export const InnerGrid = styled.div`
 	position: relative;
 	display: grid;
-	height: 55vh;
+
 	flex-basis: 75vw;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3.5vh auto;
@@ -124,16 +164,24 @@ export const TextContainer = styled.div`
 	}
 `;
 
-export const TextContainerAbout = styled.div`
+export const TextContainer2 = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
+	justify-content: left;
+`;
+
+export const TextContainerAbout = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
 	padding-left: 15%;
 	justify-content: left;
 
-	@media (max-width: 1000px) {
-		padding-left: 0px;
+	@media (max-width: 1150px) {
+		padding-left: 0;
 		justify-content: center;
 	}
 `;
@@ -153,8 +201,9 @@ export const ImgContainer = styled.div`
 export const HeroImg = styled.img`
 	display: block;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1150px) {
 		width: 100%;
+		transform: scale(0.7);
 	}
 `;
 
@@ -173,7 +222,7 @@ export const RightContainer2 = styled.div`
 	width: 100%;
 	height: 100%;
 	align-items: flex-end;
-	padding-right: 15%;
+	padding-right: 17%;
 
 	@media (max-width: 1000px) {
 		padding-right: 0;
@@ -257,12 +306,12 @@ export const CustomButton = styled(Button)`
 export const InnerGrid2 = styled.div`
 	position: relative;
 	display: grid;
-	height: 45vh;
+
 	flex-basis: 75vw;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3.5vh auto;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1150px) {
 		grid-template-columns: repeat(1, 1fr);
 	}
 `;
