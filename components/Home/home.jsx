@@ -255,9 +255,24 @@ function HomeContainer() {
 				</TextContainer2>
 				<MainContainer2>
 					<CardContainer>
-						<CardView />
-						<CardView />
-						<CardView />
+						<CardView
+							projectName="Intern.House"
+							description="A networking platform where interns can search housing and job listings while
+							connecting with other interns and employers. (Currently in development)"
+							tech={['Node', 'Express', 'Next.js', 'React', 'PostgreSQL']}
+						/>
+						<CardView
+							projectName="LyricNet"
+							description="Utilized machine learning algorithms, including Recurring Neural Networks to auto-complete lyrics and
+							the BERT language model to answer questions in the style of a chosen music artist."
+							tech={['Python', 'Flask', 'React']}
+						/>
+						<CardView
+							projectName="Morno"
+							description="Utilized the Model-View-Controller methodology to build a simple iOS application which allows you to
+							set morning routines, read news, and browse specific recipes depending on the time of day."
+							tech={['Swift', 'Core Data']}
+						/>
 					</CardContainer>
 				</MainContainer2>
 			</MainContainer>

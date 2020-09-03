@@ -1,30 +1,38 @@
 import React, { Component } from 'react';
+import { FaFolderOpen } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
-import { Card, CardHeader, CardBody, CardFooter } from './styles';
+import {
+	Card,
+	CardHeader,
+	CardBody,
+	CardFooter,
+	CardMainHeader,
+} from './styles';
 import { Row, Col, Typography, Form, Input, Button } from 'antd';
 
 const { Title } = Typography;
 
 function CardView(props) {
+	var techs = props.tech.map(function (tech) {
+		return <p style={{ color: 'white' }}>{tech}</p>;
+	});
+
 	return (
 		<>
 			<Card>
+				<CardMainHeader>
+					<IconContext.Provider value={{ size: '3em' }}>
+						<FaFolderOpen />
+					</IconContext.Provider>
+				</CardMainHeader>
 				<CardHeader>
-					<Title style={{ color: 'white' }}>Lorem Ipsum</Title>
+					<h1 style={{ color: 'white' }}>{props.projectName}</h1>
 				</CardHeader>
 				<CardBody>
-					<p style={{ color: 'white' }}>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a galley of type
-						as
-					</p>
+					<p style={{ color: 'white' }}>{props.description}</p>
 				</CardBody>
-				<CardFooter>
-					<p>dingus</p>
-					<p>dingus</p>
-					<p>dingus</p>
-				</CardFooter>
+				<CardFooter>{techs}</CardFooter>
 			</Card>
 		</>
 	);

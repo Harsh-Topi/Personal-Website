@@ -90,7 +90,7 @@ export const MainContainer = styled.div`
 	position: relative;
 	display: flex;
 	width: 75vw;
-	margin: auto auto;
+	margin: 7vh auto;
 	justify-content: center;
 	align-content: center;
 
@@ -102,30 +102,49 @@ export const CardContainer = styled.div`
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-	gap: 20px;
+	gap: 30px;
 `;
 
 export const Card = styled.div`
-	box-shadow: 0 0 3px rgb(0, 0, 0, 0.1);
-	background-color: rgb(43, 43, 43);
-	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: #282828;
+	border-radius: 5px;
+`;
+
+export const CardMainHeader = styled.div`
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-top: 20px;
 `;
 
 export const CardHeader = styled.div`
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 20px;
 `;
 
 export const CardBody = styled.div`
 	display: flex;
 	flex-direction: column;
+	height: 100px;
+	margin-bottom: 70px;
 	width: 100%;
+	padding: 20px;
 `;
 
 export const CardFooter = styled.div`
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 `;
 
 export const MainContainer2 = styled.div`
