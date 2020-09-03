@@ -30,6 +30,8 @@ import {
 	RightContainer2,
 	CardContainer,
 	TextContainer2,
+	ContactContainer,
+	ContactText,
 } from './styles';
 
 import { Row, Col, Typography, Button } from 'antd';
@@ -245,7 +247,7 @@ function HomeContainer() {
 				</InnerGrid2>
 			</MainContainer>
 
-			<MainContainer style={{ flexDirection: 'column' }}>
+			<MainContainer style={{ marginBottom: '25vh', flexDirection: 'column' }}>
 				<TextContainer2>
 					<Title style={{ color: 'white' }}> // Projects</Title>
 					<p style={{ color: 'white' }}>
@@ -279,6 +281,23 @@ function HomeContainer() {
 					</CardContainer>
 				</MainContainer2>
 			</MainContainer>
+
+			<ContactContainer>
+				<Title
+					style={{
+						color: 'white',
+						textDecoration: 'underline',
+						marginBottom: '40px',
+					}}>
+					Contact
+				</Title>
+				<ContactText>
+					I'm currently looking for work and am open to any opportunities that
+					come my way. Whether you've got some questions or just want to chat, I
+					will always do my best to respond. Shoot me an email or contact me on
+					my other social medias.
+				</ContactText>
+			</ContactContainer>
 
 			<Background params={particlesOptions} />
 		</>

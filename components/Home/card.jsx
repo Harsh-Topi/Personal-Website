@@ -14,8 +14,14 @@ import { Row, Col, Typography, Form, Input, Button } from 'antd';
 const { Title } = Typography;
 
 function CardView(props) {
-	var techs = props.tech.map(function (tech) {
-		return <p style={{ color: 'white' }}>{tech}</p>;
+	var i = 0;
+	var techs = props.tech.map(function (tech, i) {
+		i += 1;
+		return (
+			<p key={i} style={{ color: 'white' }}>
+				{tech}
+			</p>
+		);
 	});
 
 	return (

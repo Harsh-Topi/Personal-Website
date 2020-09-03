@@ -92,9 +92,32 @@ export const MainContainer = styled.div`
 	width: 75vw;
 	margin: 7vh auto;
 	justify-content: center;
-	align-content: center;
 
 	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+`;
+
+export const ContactContainer = styled.div`
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 45vw;
+	margin: 7vh auto;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 1300px) {
+		width: 75vw;
+	}
+`;
+
+export const ContactText = styled.p`
+	color: white;
+	font-size: 25px;
+	text-align: center;
+
+	@media (max-width: 1300px) {
+		font-size: 20px;
+	}
 `;
 
 export const CardContainer = styled.div`
