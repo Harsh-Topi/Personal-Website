@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaFolderOpen } from 'react-icons/fa';
+import { FaFolderOpen, FaExternalLinkSquareAlt } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 import {
@@ -24,6 +24,7 @@ function CardView(props) {
 				<CardMainHeader>
 					<IconContext.Provider value={{ size: '3em' }}>
 						<FaFolderOpen />
+						<FaExternalLinkSquareAlt />
 					</IconContext.Provider>
 				</CardMainHeader>
 				<CardHeader>

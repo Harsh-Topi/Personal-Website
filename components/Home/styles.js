@@ -118,6 +118,7 @@ export const CardMainHeader = styled.div`
 	justify-content: space-between;
 	padding-left: 20px;
 	padding-top: 20px;
+	padding-right: 20px;
 `;
 
 export const CardHeader = styled.div`
