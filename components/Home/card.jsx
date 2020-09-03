@@ -24,7 +24,9 @@ function CardView(props) {
 				<CardMainHeader>
 					<IconContext.Provider value={{ size: '3em' }}>
 						<FaFolderOpen />
-						<FaExternalLinkSquareAlt />
+						<a style={{ color: 'black' }} href={props.link} target="_blank">
+							<FaExternalLinkSquareAlt />
+						</a>
 					</IconContext.Provider>
 				</CardMainHeader>
 				<CardHeader>
