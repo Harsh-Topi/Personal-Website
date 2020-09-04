@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 30px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="500" height="500"/>
+  <path class="cls-2" d="M64,115V93H418v22H64Z"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-2" d="M235.008,115h29.984V426H235.008V115Z"/>
+  <path id="Shape_1_copy-2" data-name="Shape 1 copy" class="cls-2" d="M214,115H223V426H214V115Z"/>
+  <path id="Shape_1_copy_4" data-name="Shape 1 copy 4" class="cls-2" d="M406.006,262h20.988V426H406.006V262Z"/>
+  <path id="Shape_1_copy_3" data-name="Shape 1 copy 3" class="cls-2" d="M427,262.006v21.988H259V262.006H427Z"/>
+  <rect x="215" y="415" width="50" height="11"/>
+</svg>
