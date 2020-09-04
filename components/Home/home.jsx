@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import Router from 'next/router';
 import Link from 'next/link';
 import Particles from 'react-particles-js';
-import { FaJava, FaPython, FaJs, FaNode, FaReact } from 'react-icons/fa';
+import {
+	FaJava,
+	FaPython,
+	FaJs,
+	FaNode,
+	FaReact,
+	FaLinkedin,
+	FaGithubSquare,
+	FaInstagramSquare,
+} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import CardView from './card';
 
@@ -32,6 +41,7 @@ import {
 	TextContainer2,
 	ContactContainer,
 	ContactText,
+	FooterContainer,
 } from './styles';
 
 import { Row, Col, Typography, Button } from 'antd';
@@ -238,6 +248,7 @@ function HomeContainer() {
 								<FaPython />
 								<FaJs />
 								<FaNode />
+								<FaReact />
 							</IconContext.Provider>
 						</IconContainer>
 					</TextContainerAbout>
@@ -247,7 +258,7 @@ function HomeContainer() {
 				</InnerGrid2>
 			</MainContainer>
 
-			<MainContainer style={{ marginBottom: '25vh', flexDirection: 'column' }}>
+			<MainContainer style={{ marginBottom: '40vh', flexDirection: 'column' }}>
 				<TextContainer2>
 					<Title style={{ color: 'white' }}> // Projects</Title>
 					<p style={{ color: 'white' }}>
@@ -297,7 +308,42 @@ function HomeContainer() {
 					will always do my best to respond. Shoot me an email or contact me on
 					my other social medias.
 				</ContactText>
+				<ButtonContainer style={{ marginTop: '30px', marginBottom: '25px' }}>
+					<CustomButton
+						style={{
+							color: 'white',
+							borderColor: 'white',
+						}}
+						ghost={'true'}
+						type={'primary'}
+						size={'large'}
+						href="mailto:htopiw@gmail.com">
+						Contact Me
+					</CustomButton>
+				</ButtonContainer>
+				<IconContainer
+					style={{
+						justifyContent: 'space-evenly',
+						width: '20vw',
+					}}></IconContainer>
 			</ContactContainer>
+			<footer style={{ marginTop: '20vh' }}>
+				<FooterContainer>
+					<IconContext.Provider
+						value={{
+							color: 'white',
+							size: '3.5em',
+							style: { margin: '20px 20px' },
+						}}>
+						<FaLinkedin />
+						<FaGithubSquare />
+						<FaInstagramSquare />
+					</IconContext.Provider>
+				</FooterContainer>
+				<FooterContainer style={{ marginTop: '20px', marginBottom: '50px' }}>
+					<p style={{ color: 'white' }}>Harsh Topiwala &copy; 2020</p>
+				</FooterContainer>
+			</footer>
 
 			<Background params={particlesOptions} />
 		</>

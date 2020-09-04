@@ -96,6 +96,14 @@ export const MainContainer = styled.div`
 	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
 `;
 
+export const FooterContainer = styled.div`
+	position: relative;
+
+	display: flex;
+	width: 100%;
+	justify-content: center;
+`;
+
 export const ContactContainer = styled.div`
 	position: relative;
 	display: flex;
