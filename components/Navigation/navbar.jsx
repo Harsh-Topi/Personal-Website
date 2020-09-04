@@ -19,7 +19,7 @@ function Navbar() {
 				</LogoContainer>
 				<NavigationList>
 					<NavItem>
-						<Link href="/aboutme">
+						<Link href="#about">
 							<LinkAnchor>About Me</LinkAnchor>
 						</Link>
 					</NavItem>
@@ -29,7 +29,7 @@ function Navbar() {
 						</Link>
 					</NavItem>
 					<NavItem>
-						<LinkAnchor href="mailto:htopiw@gmail.com">Contact</LinkAnchor>
+						<LinkAnchor href="#contact">Contact</LinkAnchor>
 					</NavItem>
 				</NavigationList>
 			</NavigationBar>

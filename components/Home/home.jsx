@@ -205,7 +205,8 @@ function HomeContainer() {
 								style={{ color: 'white', borderColor: 'white' }}
 								ghost={'true'}
 								type={'primary'}
-								size={'large'}>
+								size={'large'}
+								href="#projects">
 								Projects
 							</CustomButton>
 						</ButtonContainer>
@@ -213,7 +214,9 @@ function HomeContainer() {
 				</InnerGrid>
 			</MainContainer>
 
-			<MainContainer style={{ marginBottom: '25vh' }}>
+			<MainContainer
+				style={{ marginBottom: '20vh', paddingTop: '10vh' }}
+				id="about">
 				<InnerGrid2>
 					<TextContainerAbout>
 						<Title
@@ -258,7 +261,13 @@ function HomeContainer() {
 				</InnerGrid2>
 			</MainContainer>
 
-			<MainContainer style={{ marginBottom: '40vh', flexDirection: 'column' }}>
+			<MainContainer
+				style={{
+					marginBottom: '40vh',
+					flexDirection: 'column',
+					paddingTop: '10vh',
+				}}
+				id="projects">
 				<TextContainer2>
 					<Title style={{ color: 'white' }}> // Projects</Title>
 					<p style={{ color: 'white' }}>
@@ -293,7 +302,7 @@ function HomeContainer() {
 				</MainContainer2>
 			</MainContainer>
 
-			<ContactContainer>
+			<ContactContainer id="contact">
 				<Title
 					style={{
 						color: 'white',
