@@ -9,10 +9,10 @@ function HeadOGGTags() {
 			/>
 			<meta
 				property="og:image"
-				content="https://d0hx9a.dm.files.1drv.com/y4ms8WeFg5Gv4bSnO64D2KXi16IOr_axZblZh49QfqAcmPzPTPCawonLGkoyJZzQZ96Ad-kTur_fd0yXMbASeksPADmcdrdqwJzjaQexcwr6RBjuAid9GV3Nw8iagON48ui6HXHZf2QDtXlhRaas_zMU0L9Fpr3C_eKckgfkMLedPBo3HxJmFO_e8zqRrfkFUOHPPANNpS_Dd7Dfzo0rAdcLw?width=660&height=291&cropmode=none"
+				content="https://eehx9a.dm.files.1drv.com/y4mgrHxBBue5sR73omRKMJGKtnA0tEFjWVSKpcKtNeIbXu9Ifr1ZF8FdM3Xe-yhq1g7ZJrafQGJkSGx0uik70CYWX7mlxqONitBatmEnw6OhEWsSZ5a3C_bGwJumFAxDOlZxj9Zo-0Jm0ThAk5WbWabRGz4opXE2rpTHzthSEDhhWb4w7IhyDZBv-lV3HM648O6cd32tmby041Btjj9mA-hSQ?width=500&height=500&cropmode=none"
 			/>
-			<meta property="og:image:height" content="900" />
-			<meta property="og:image:width" content="900" />
+			<meta property="og:image:height" content="500" />
+			<meta property="og:image:width" content="500" />
 			<meta property="og:url" content="https://harshtopi.com/" />
 		</>
 	);
