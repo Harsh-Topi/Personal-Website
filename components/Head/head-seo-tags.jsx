@@ -3,7 +3,10 @@ function HeadOGGTags() {
 		<>
 			<meta property="og:site_name" content="Harsh Topiwala" />
 			<meta property="og:title" content="Harsh Topiwala" />
-			<meta property="og:description" content="Just another portfolio." />
+			<meta
+				property="og:description"
+				content="Harsh Topiwala is a Software Developer and student based out of Toronto, Ontario, Canada. Currently building projects and learning new things one step at a time."
+			/>
 			<meta property="og:image" content="https://ibb.co/QjtwCJQ" />
 			<meta property="og:image:height" content="1919" />
 			<meta property="og:image:width" content="789" />
