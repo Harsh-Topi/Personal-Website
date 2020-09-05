@@ -1,7 +1,7 @@
 function HeadOGGTags() {
 	return (
 		<>
-			<meta property="og:site_name" content="" />
+			<meta property="og:site_name" content="Harsh Topiwala" />
 			<meta property="og:title" content="Harsh Topiwala" />
 			<meta property="og:description" content="Just another portfolio." />
 			<meta property="og:image" content="https://ibb.co/QjtwCJQ" />
