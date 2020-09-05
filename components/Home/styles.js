@@ -61,7 +61,7 @@ export const LogoContainer = styled.div`
 	}
 
 	@media (max-width: 500px) {
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 `;
 
@@ -70,7 +70,7 @@ export const LogoImg = styled.img`
 	transform: scale(0.5);
 
 	@media (max-width: 1000px) {
-		width: 145px;
+		width: 125px;
 	}
 `;
 

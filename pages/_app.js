@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 // STYLESHEETS
 import 'antd/dist/antd.css';
 import '../styles/index.css';
+import '../styles/styles.css';
 
 MyApp.propTypes = {
 	Component: PropTypes.any,

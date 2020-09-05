@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import dynamic from 'next/dynamic';
+
+import NavList from './navlist';
 
 import {
 	NavigationBar,
 	LogoContainer,
 	LogoImg,
-	NavigationList,
 	NavItem,
 	LinkAnchor,
 } from './styles';
@@ -15,23 +19,11 @@ function Navbar() {
 		<>
 			<NavigationBar>
 				<LogoContainer>
-					<LogoImg src="/logo/logowhite.svg" />
+					<a href="#start">
+						<LogoImg src="/logo/logowhite.svg" />
+					</a>
 				</LogoContainer>
-				<NavigationList>
-					<NavItem>
-						<Link href="#about">
-							<LinkAnchor>About Me</LinkAnchor>
-						</Link>
-					</NavItem>
-					<NavItem>
-						<Link href="/">
-							<LinkAnchor>Reports</LinkAnchor>
-						</Link>
-					</NavItem>
-					<NavItem>
-						<LinkAnchor href="#contact">Contact</LinkAnchor>
-					</NavItem>
-				</NavigationList>
+				<NavList id="nlist" />
 			</NavigationBar>
 		</>
 	);

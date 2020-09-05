@@ -15,6 +15,10 @@ export const NavigationList = styled.ul`
 	list-style: none;
 	padding-right: 30px;
 	margin-right: 30px;
+
+	@media (max-width: 740px) {
+		display: none;
+	}
 `;
 
 export const NavItem = styled.li`

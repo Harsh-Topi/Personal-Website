@@ -162,7 +162,7 @@ const particlesOptions = {
 function HomeContainer() {
 	return (
 		<>
-			<MainContainer style={{ marginBottom: '25vh' }}>
+			<MainContainer style={{ marginBottom: '25vh' }} id="start">
 				<InnerGrid>
 					<TextContainer>
 						<InsideLeftContainer>
@@ -344,9 +344,15 @@ function HomeContainer() {
 							size: '3.5em',
 							style: { margin: '20px 20px' },
 						}}>
-						<FaLinkedin />
-						<FaGithubSquare />
-						<FaInstagramSquare />
+						<a target="_blank" href="https://www.linkedin.com/in/htopiwala/">
+							<FaLinkedin />
+						</a>
+						<a target="_blank" href="https://github.com/Harsh-Topi">
+							<FaGithubSquare />
+						</a>
+						<a target="_blank" href="https://www.instagram.com/harsh.topi/">
+							<FaInstagramSquare />
+						</a>
 					</IconContext.Provider>
 				</FooterContainer>
 				<FooterContainer style={{ marginTop: '20px', marginBottom: '50px' }}>
