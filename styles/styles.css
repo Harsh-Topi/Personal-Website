@@ -18,3 +18,9 @@
   transition: 0.5s;
   color: white;
 }
+
+.cardlink:not(:hover) {
+  transform: translateY(0.25em);
+  transition: 0.5s;
+
+}
