@@ -141,6 +141,18 @@ export const Card = styled.div`
 	flex-direction: column;
 	background-color: #282828;
 	border-radius: 5px;
+
+	:hover,
+	:focus {
+		box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+		transform: translateY(-0.15em);
+		transition: 0.5s;
+	}
+
+	:not(:hover) {
+		transform: translateY(0.15em);
+		transition: 0.5s;
+	}
 `;
 
 export const CardMainHeader = styled.div`

@@ -181,6 +181,7 @@ function HomeContainer() {
 						<ButtonContainer
 							style={{ marginTop: '30px', marginBottom: '25px' }}>
 							<CustomButton
+								className="raise"
 								style={{
 									color: 'white',
 									borderColor: 'white',
@@ -193,6 +194,7 @@ function HomeContainer() {
 								Resume
 							</CustomButton>
 							<CustomButton
+								className="raise"
 								style={{ color: 'white', borderColor: 'white' }}
 								ghost={'true'}
 								type={'primary'}
@@ -202,6 +204,7 @@ function HomeContainer() {
 								GitHub
 							</CustomButton>
 							<CustomButton
+								className="raise"
 								style={{ color: 'white', borderColor: 'white' }}
 								ghost={'true'}
 								type={'primary'}
@@ -319,6 +322,7 @@ function HomeContainer() {
 				</ContactText>
 				<ButtonContainer style={{ marginTop: '30px', marginBottom: '25px' }}>
 					<CustomButton
+						className="raise"
 						style={{
 							color: 'white',
 							borderColor: 'white',
@@ -344,13 +348,22 @@ function HomeContainer() {
 							size: '3.5em',
 							style: { margin: '20px 20px' },
 						}}>
-						<a target="_blank" href="https://www.linkedin.com/in/htopiwala/">
+						<a
+							className="raise"
+							target="_blank"
+							href="https://www.linkedin.com/in/htopiwala/">
 							<FaLinkedin />
 						</a>
-						<a target="_blank" href="https://github.com/Harsh-Topi">
+						<a
+							className="raise"
+							target="_blank"
+							href="https://github.com/Harsh-Topi">
 							<FaGithubSquare />
 						</a>
-						<a target="_blank" href="https://www.instagram.com/harsh.topi/">
+						<a
+							className="raise"
+							target="_blank"
+							href="https://www.instagram.com/harsh.topi/">
 							<FaInstagramSquare />
 						</a>
 					</IconContext.Provider>
