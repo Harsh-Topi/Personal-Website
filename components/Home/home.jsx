@@ -189,7 +189,7 @@ function HomeContainer() {
 								ghost={'true'}
 								type={'primary'}
 								size={'large'}
-								href="https://drive.google.com/file/d/1QwVINVOt8sKAgwvsziwmrK-na3oG99S5/view?usp=sharing"
+								href="https://drive.google.com/file/d/1scpsUUBCJNjSW5Cvtww8aroLekaRKXk8/view?usp=sharing"
 								target="_blank">
 								Resume
 							</CustomButton>
