@@ -296,18 +296,17 @@ function HomeContainer() {
 							link="https://intern.house/"
 						/>
 						<CardView
+							projectName="Resu-Parse"
+							description="A desktop application which uses lever.co's resume parsing API to display parsed resume information in an easy-to-digest manner."
+							tech={['TypeScript', 'Electron', 'Python', 'AWS']}
+							link="https://github.com/Harsh-Topi/resu-parse"
+						/>
+						<CardView
 							projectName="LyricNet"
 							description="Utilized machine learning algorithms, including Recurring Neural Networks to auto-complete lyrics and
 							the BERT language model to answer questions in the style of a chosen music artist."
 							tech={['Python', 'Flask', 'React']}
 							link="http://lyricnet.tech/"
-						/>
-						<CardView
-							projectName="Morno"
-							description="Utilized the Model-View-Controller methodology to build a simple iOS application which allows you to
-							set morning routines, read news, and browse specific recipes depending on the time of day."
-							tech={['Swift', 'Core Data']}
-							link="https://github.com/Harsh-Topi/MornoApp"
 						/>
 					</CardContainer>
 				</MainContainer2>
