@@ -5,7 +5,7 @@ import HeadOGGTags from './head-seo-tags';
 function HeadComponent({ title }) {
 	return (
 		<>
-			<title>{title ? `${title} | Harsh T.` : 'Harsh T.'}</title>
+			<title>{title ? `Harsh Topiwala` : 'Harsh Topiwala'}</title>
 			<HeadMetaTags />
 			<HeadOGGTags />
 			<link rel="icon" type="image/x-icon" href="/favicon.ico" />
