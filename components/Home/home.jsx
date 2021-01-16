@@ -44,6 +44,8 @@ import {
 	FooterContainer,
 } from './styles';
 
+import Head from 'next/head';
+
 import { Row, Col, Typography, Button } from 'antd';
 
 const { Title } = Typography;
@@ -162,6 +164,12 @@ const particlesOptions = {
 function HomeContainer() {
 	return (
 		<>
+			<Head>
+				<meta
+					name="description"
+					content="Harsh Topiwala is a Software Developer and student based out of Toronto, Ontario, Canada."
+				/>
+			</Head>
 			<MainContainer style={{ marginBottom: '25vh' }} id="start">
 				<InnerGrid>
 					<TextContainer>

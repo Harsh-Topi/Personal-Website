@@ -363,7 +363,7 @@ export const ButtonContainer = styled.div`
 
 export const CustomButton = styled(Button)`
 	border-radius: 10px;
-	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	box-shashdow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 `;
 
 export const InnerGrid2 = styled.div`

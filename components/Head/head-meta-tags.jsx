@@ -7,7 +7,7 @@ function HeadMetaTags() {
 			<meta property="og:title" content="Harsh Topiwala" />
 			<meta
 				property="og:description"
-				content="Harsh Topiwala is a Software Developer and student based out of Toronto, Ontario, Canada. Currently building projects and learning new things one step at a time."
+				content="Harsh Topiwala is a Software Developer and student based out of Toronto, Ontario, Canada."
 			/>
 			<meta
 				property="og:image"
