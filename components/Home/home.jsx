@@ -165,6 +165,7 @@ function HomeContainer() {
 	return (
 		<>
 			<Head>
+				<title>Harsh Topiwala</title>
 				<meta
 					name="description"
 					content="Harsh Topiwala is a Software Developer and student based out of Toronto, Ontario, Canada."
