@@ -188,7 +188,7 @@ function HomeContainer() {
 						</InsideRightContainer>
 						<ButtonContainer
 							style={{ marginTop: '30px', marginBottom: '25px' }}>
-							<CustomButton
+							{/* <CustomButton
 								className="raise"
 								style={{
 									color: 'white',
@@ -200,7 +200,7 @@ function HomeContainer() {
 								href="https://drive.google.com/file/d/1scpsUUBCJNjSW5Cvtww8aroLekaRKXk8/view?usp=sharing"
 								target="_blank">
 								Resume
-							</CustomButton>
+							</CustomButton> */}
 							<CustomButton
 								className="raise"
 								style={{ color: 'white', borderColor: 'white' }}
