@@ -1,3 +1,4 @@
+/*global chrome*/
 import Callback from '../../components/Callback/callback';
 
 const Index = () => (

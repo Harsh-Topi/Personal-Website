@@ -1,3 +1,5 @@
+/*global chrome*/
+
 import React, { useEffect } from 'react';
 
 function Callback() {
@@ -10,8 +12,14 @@ function Callback() {
             // ⛔️ Don't use window here
           }
           
-          var data = { type: "FROM_PAGE", text: "Hello from the webpage!" };
-          window.postMessage(data, "*");
+        // The ID of the extension we want to talk to.
+        var editorExtensionId = "pnfgadelklgelmcpelheicikaiaefalo";
+
+        // Make a simple request:
+        chrome.runtime.sendMessage(editorExtensionId, {},
+        function(response) {
+            console.log(response);
+        });
     });
 	return (
 		<>
