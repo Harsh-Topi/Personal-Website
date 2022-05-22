@@ -12,14 +12,13 @@ function Callback() {
             // ⛔️ Don't use window here
           }
           
+          var editorExtensionId = "pnfgadelklgelmcpelheicikaiaefalo";
+
+        // chrome.runtime.connect(editorExtensionId);
         // The ID of the extension we want to talk to.
-        var editorExtensionId = "pnfgadelklgelmcpelheicikaiaefalo";
 
         // Make a simple request:
-        chrome.runtime.sendMessage(editorExtensionId, {},
-        function(response) {
-            console.log(response);
-        });
+        chrome.runtime.sendMessage(editorExtensionId, {dangus: 'dingus'});
     });
 	return (
 		<>
